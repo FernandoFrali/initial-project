@@ -22,6 +22,7 @@ progress {
 .link1 {
   text-decoration: none;
   color: black;
+  margin-top: 30px;
 }
 
 .link1:hover {
@@ -51,6 +52,7 @@ progress {
 #jovimg {
   max-width: 100%;
   position: relative;
+  filter: grayscale(100%);
 }
 
 #header_text1 {
@@ -84,6 +86,7 @@ progress {
   grid-template-columns: 1fr;
   display: grid;
   position: relative;
+  place-items: center;
 }
 
 .grid1 {
