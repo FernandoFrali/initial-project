@@ -3,7 +3,52 @@ body {
   margin: 0px;
 }
 
-#stevezinho {
+progress {
+  width: 1000px;
+  padding: 20px;
+}
+
+.aboutme {
+  text-align: center;
+}
+
+#barra1 {
+  border: 1px solid black;
+  background-color: black;
+  margin: 0px;
+  margin-left: 30px;
+}
+
+.link1 {
+  text-decoration: none;
+  color: black;
+}
+
+.link1:hover {
+  padding: 13px;
+  background-color: orange;
+  border-radius: 4px;
+  color: white;
+}
+
+.point {
+  color: rgb(211, 211, 0);
+}
+
+#hjovi {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  font-size: 3em;
+  text-align: center;
+}
+
+.pjovi {
+  text-align: center;
+  font-weight: bold;
+  line-height: 10px;
+}
+
+#jovimg {
   max-width: 100%;
   position: relative;
 }
@@ -11,14 +56,21 @@ body {
 #header_text1 {
   position: absolute;
   z-index: 2;
-  font-size: 7em;
-  font-family: 'Courier New';
+  font-size: 3em;
+  font-family: 'Franklin Gothic Medium';
   color: white; 
-  grid-column: 1 / -1;
   grid-area: 1 / 1;
   max-width: 100%;
-  margin: 0px;
-  place-self: center;
+  place-self: start;
+  margin-left: 30px;
+}
+
+.textotop {
+  grid-area: 3 / 1;
+  color: white;
+  place-self: start;
+  margin-left: 30px;
+  width: 100%;
 }
 
 #botao2 {
@@ -31,27 +83,32 @@ body {
 .header {
   grid-template-columns: 1fr;
   display: grid;
-  place-items: center;
-  place-content: center;
   position: relative;
 }
 
 .grid1 {
   display: grid;
-  grid-template-columns: minmax(50px, 300px) minmax(50px, 300px) minmax(50px, 300px);
+  grid-template-columns: minmax(50px, 300px) minmax(5px, 20px) minmax(50px, 300px) minmax(5px, 20px) minmax(50px, 300px);
   gap: 80px;
   justify-content: center;
+  align-content: center;
   margin-top: 130px;
 }
 
-#apple {
+.linhagrid {
+  border: rgba(83, 83, 83, 0.041) solid 1px;
+  background-color: rgba(83, 83, 83, 0.041);
+}
+
+#xesque {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1150px 100px 100px 100px 100px 100px;
+  grid-template-rows: 100px 200px 1fr 1fr 1fr;
   position: absolute;
   z-index: 3;
-  align-self: center;
-  width: 1920px;
+  align-self: start;
+  align-items: center;
+  justify-items: center;
   max-width: 100%;
   margin: 0px;
 }
@@ -69,10 +126,11 @@ body {
 }
 
 #barra1 {
-  grid-area: 4 / 2;
-  place-self: end;
-  font-size: 50px;
-  color: white;
+  grid-column: 1 / -1;
+  grid-area: 2 / 1;
+  place-self: start;
+  width: 1500px;
+  color: black;
 }
 
 #logo2 {
@@ -93,6 +151,7 @@ body {
 
 .paragrafogrid {
   text-align: center;
+  font-weight: bold;
 }
 
 .bonecos {
@@ -105,7 +164,7 @@ body {
   box-shadow: inset 0px 5px 4px rgba(0, 0, 0, 0.068);
   background-color: rgba(0, 0, 0, 0.041);
   width: 1fr;
-  height: 20px;
+  height: 10px;
   margin-top: 50px;
 }
 .quem {
@@ -115,12 +174,25 @@ body {
   margin-top: 50px;
 }
 
+footer {
+
+  height: 100%;
+}
+
+#footer {
+  width: 500px;
+}
+
+.little {
+  text-align: start;
+  margin-left: 50px;
+}
+
 #sobrenos {
-  color: rgb(168, 168, 168);
-  font-weight: lighter;
+  color: black;
+  font-weight: bolder;
   grid-column: 1 / -1;
-  font-family: monospace;
-  font-size: 15px;
+  font-size: 25px;
 }
 
 #invisibleletter {
@@ -148,8 +220,8 @@ body {
   font-size: 35px;
 }
 
-#bill {
-  margin-top: 122px;
+#pensador {
+  margin-top: 40px;
   width: 100%;
   grid-area: 3 / 1;
   align-self: top;
@@ -159,7 +231,7 @@ body {
 }
 
 #lista {
-  margin-top: 100px;
+  margin-top: 0px;
   text-align: start;
   grid-area: 3 / 2;
   grid-column: 2 / 4;
@@ -182,36 +254,6 @@ body {
   margin-right: 10px;
   margin-top: 0px;
 
-}
-
-hr:nth-of-type(1) {
-  width: 1fr;
-  margin: 0px;
-  background-color: blue;
-  border: 10px solid blue;
-}
-
-hr:nth-of-type(2) {
-  width: 35%;
-  margin: 0px;
-  background-color: blue;
-  border: 10px solid blue;
-}
-
-hr:nth-of-type(3) {
-  width: 40%;
-  margin: 0px;
-  background-color: blue;
-  border: 10px solid blue;
-}
-
-hr:nth-of-type(4) {
-  width: 1fr;
-  margin: 0px;
-  border: 10px solid red;
-  border-style: dashed;
-  margin-top: 10px;
-  margin-bottom: 40px;
 }
 
 .botao1 {
